@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="theme-color" content="#12060f">
+<title>Galería flotante 💖</title>
+<meta name="description" content="Un visualizador de fotos flotantes con corazones.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="fondo" aria-hidden="true">
+  <span class="brillo brillo--1"></span>
+  <span class="brillo brillo--2"></span>
+  <span class="brillo brillo--3"></span>
+</div>
+
+<div id="corazones" class="corazones" aria-hidden="true"></div>
+
+<main id="escena" class="escena" aria-label="Fotos flotantes"></main>
+
+<div id="carga" class="carga">
+  <div class="carga__latido">💖</div>
+  <p class="carga__texto">Cargando recuerdos…</p>
+</div>
+
+<header class="cabecera">
+  <h1 class="cabecera__titulo">Galería flotante</h1>
+  <p class="cabecera__sub"><span id="contador">0</span> fotos · toca una para verla grande</p>
+</header>
+
+<nav class="controles" aria-label="Controles">
+  <button id="btnPausa" class="ctrl" type="button" aria-pressed="false" title="Pausar movimiento">
+    <span class="ctrl__icono" aria-hidden="true">⏸</span><span class="ctrl__txt">Pausar</span>
+  </button>
+  <button id="btnMezclar" class="ctrl" type="button" title="Mezclar fotos">
+    <span class="ctrl__icono" aria-hidden="true">🔀</span><span class="ctrl__txt">Mezclar</span>
+  </button>
+  <button id="btnPantalla" class="ctrl" type="button" title="Pantalla completa">
+    <span class="ctrl__icono" aria-hidden="true">⛶</span><span class="ctrl__txt">Pantalla</span>
+  </button>
+</nav>
+
+<div id="visor" class="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button id="visorCerrar" class="visor__cerrar" type="button" aria-label="Cerrar">✕</button>
+  <button id="visorPrev" class="visor__nav visor__nav--prev" type="button" aria-label="Anterior">‹</button>
+  <button id="visorNext" class="visor__nav visor__nav--next" type="button" aria-label="Siguiente">›</button>
+  <figure class="visor__marco">
+    <img id="visorImg" class="visor__img" alt="Foto ampliada">
+    <figcaption id="visorPie" class="visor__pie"></figcaption>
+  </figure>
+</div>
+
+<script src="photos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
