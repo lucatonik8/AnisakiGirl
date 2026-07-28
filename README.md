@@ -22,6 +22,7 @@ Formatos admitidos: `jpg`, `jpeg`, `png`, `gif`, `webp`, `avif`, `bmp`.
 | `photos.js` / `photos.json` | La lista de fotos (se generan solas). |
 | `generar-lista.ps1` | Regenera esa lista. |
 | `ACTUALIZAR.bat` | Regenera la lista y publica los cambios. |
+| `BORRAR-REPO.bat` | Borra el repositorio y tumba la web (pide confirmación). |
 | `fotos/` | Aquí van tus imágenes. |
 
 ## Detalles
