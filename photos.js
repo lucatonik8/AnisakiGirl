@@ -1,6 +1,5 @@
 /* Generado automaticamente por generar-lista.ps1 - no lo edites a mano. */
 self.FOTOS_INICIALES = [
-  "fotos/WhatsApp Image 2026-07-25 at 21.19.36 (1).jpeg",
   "fotos/WhatsApp Image 2026-07-25 at 21.19.36.jpeg",
   "fotos/WhatsApp Image 2026-07-25 at 21.19.42.jpeg",
   "fotos/WhatsApp Image 2026-07-25 at 21.19.44 (1).jpeg",
